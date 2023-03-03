@@ -3,6 +3,136 @@
 {% block title %}Work Experiences{% endblock %}
 
 {% block content %}
-<h1>Work Experiences</h1>
-<p>This is the Work Experiences page.</p>
+    <h1>Work Experiences</h1>
+
+    <div class="project-container">
+        <div class="project">
+            <h2>Software Developer at XYZ Company</h2>
+            <p>June 2020 - Present</p>
+            <ul>
+                <li>Developed and maintained the company's internal CRM system using Python and Flask.</li>
+                <li>Collaborated with the product team to implement new features and fix bugs.</li>
+                <li>Implemented continuous integration and deployment using GitHub Actions and AWS Elastic Beanstalk.</li>
+                <li>Participated in code reviews and provided feedback to improve code quality.</li>
+            </ul>
+        </div>
+        <div class="project">
+            <h2>Full Stack Developer at ABC Agency</h2>
+            <p>January 2019 - May 2020</p>
+            <ul>
+                <li>Worked on various client projects, developing web applications using the MERN stack.</li>
+                <li>Developed and maintained the agency's website using React and Next.js.</li>
+                <li>Implemented custom integrations with third-party APIs to provide additional functionality for clients.</li>
+                <li>Managed project timelines and communicated with clients to ensure project success.</li>
+            </ul>
+        </div>
+        <div class="project">
+            <h2>Web Developer at DEF Corporation</h2>
+            <p>June 2018 - December 2018</p>
+            <ul>
+                <li>Developed and maintained the company's e-commerce website using WordPress and WooCommerce.</li>
+                <li>Implemented custom WordPress plugins to extend the functionality of the website.</li>
+                <li>Created and maintained product data feeds for third-party marketplaces.</li>
+                <li>Managed the website's search engine optimization and improved its search engine ranking.</li>
+            </ul>
+        </div>
+        <div class="project">
+            <h2>Front End Developer at GHI Startup</h2>
+            <p>January 2018 - May 2018</p>
+            <ul>
+                <li>Developed and maintained the company's landing page and marketing website using HTML, CSS, and JavaScript.</li>
+                <li>Created wireframes and prototypes to guide the design process.</li>
+                <li>Implemented A/B testing to improve conversion rates.</li>
+                <li>Managed the company's social media presence and created engaging content to attract new customers.</li>
+            </ul>
+        </div>
+        <div class="project">
+            <h2>Software Engineering Intern at JKL Corporation</h2>
+            <p>June 2017 - August 2017</p>
+            <ul>
+                <li>Assisted with the development of the company's mobile app using React Native.</li>
+                <li>Collaborated with the development team to fix bugs and implement new features.</li>
+                <li>Conducted code reviews and provided feedback to improve code quality.</li>
+                <li>Developed automated testing scripts to improve testing efficiency.</li>
+            </ul>
+        </div>
+        <div class="project">
+            <h2>Web Development Intern at MNO Agency</h2>
+            <p>January 2017 - May 2017</p>
+            <ul>
+                <li>Assisted with the development of the agency's website using WordPress.</li>
+                <li>Created and maintained product data feeds for third-party marketplaces.</li>
+                <li>Managed the website's search engine optimization and improved its search engine ranking.</li>
+                <li>Created and maintained the agency's social media presence.</li>
+            </ul>
+        </div>
+    </div>
+
+    <style>
+        .project-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+    
+        .project {
+            width: 300px;
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+    
+        .project img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom:20px;
+        }
+    
+        .project h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+    
+        .project p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+    
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #4285F4;
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+    
+        .btn:hover {
+            background-color: #3367D6;
+        }
+
+        .project ul {
+            display: flex;
+            flex-direction: column;
+            list-style: disc;
+            
+        }
+
+        .project li {
+            margin-bottom: 10px;
+            text-decoration: none;
+        }
+
+    
+    </style>
+    
+    
 {% endblock %}
+
+

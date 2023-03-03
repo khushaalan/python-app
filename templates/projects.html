@@ -4,5 +4,97 @@
 
 {% block content %}
 <h1>Projects</h1>
-<p>This is the Projects page.</p>
+
+<div class="project-container">
+    <div class="project">
+        <h2>React Weather App</h2>
+        <img src="static/project-images/react-weather-app.png" alt="React Weather App Screenshot">
+        <p>A weather app built with React, which displays current weather conditions and a 5-day forecast for a chosen location. Data is sourced from the OpenWeatherMap API.</p>
+        <a href="#" class="btn">View Project</a>
+    </div>
+    <div class="project">
+        <h2>Node.js Chat App</h2>
+        <img src="static/project-images/nodejs-chat-app.png" alt="Node.js Chat App Screenshot">
+        <p>A real-time chat application built with Node.js and Socket.io. Users can join chat rooms and communicate with other users in real-time.</p>
+        <a href="#" class="btn">View Project</a>
+    </div>
+    <div class="project">
+        <h2>Django Blog</h2>
+        <img src="static/project-images/django-blog.png" alt="Django Blog Screenshot">
+        <p>A blogging platform built with Django. Users can create, edit, and delete blog posts, as well as comment on other users' posts.</p>
+        <a href="#" class="btn">View Project</a>
+    </div>
+    <div class="project">
+        <h2>React Native To-Do App</h2>
+        <img src="static/project-images/react-native-todo-app.png" alt="React Native To-Do App Screenshot">
+        <p>A to-do list app built with React Native. Users can add and delete tasks, as well as mark tasks as completed.</p>
+        <a href="#" class="btn">View Project</a>
+    </div>
+    <div class="project">
+        <h2>Flask E-Commerce Site</h2>
+        <img src="static/project-images/flask-ecommerce-site.png" alt="Flask E-Commerce Site Screenshot">
+        <p>An e-commerce site built with Flask. Users can browse products, add items to their cart, and complete the checkout process.</p>
+        <a href="#" class="btn">View Project</a>
+    </div>
+    <div class="project">
+        <h2>Next.js Blog</h2>
+        <img src="static/project-images/nextjs-blog.png" alt="Next.js Blog Screenshot">
+        <p>A simple blogging platform built with Next.js. Users can create, edit, and delete blog posts, and view posts by other users.</p>
+        <a href="#" class="btn">View Project</a>
+    </div>
+</div>
+
+<style>
+    .project-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .project {
+        width: 300px;
+        background-color: #f2f2f2;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        text-align: center;
+    }
+
+    .project img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        margin-bottom:20px;
+    }
+
+    .project h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .project p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        border-radius: 5px;
+        background-color: #4285F4;
+        color: #fff;
+        text-decoration: none;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+        background-color: #3367D6;
+    }
+
+</style>
+
+
 {% endblock %}
+

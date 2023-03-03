@@ -25,18 +25,20 @@ ul {
 }
 li {
     margin-left: 20px;
-    text-decoration: underline;
 }
+
 a {
-    text-decoration: none;
     color: black;
     font-size: x-large;
     font-weight: bold;
+    text-decoration: none;
 }
-a:hover {
+a.active, a:hover {
     color: #ff0000;
     backdrop-filter: blur(5px);
+    text-decoration: underline;
 }
+  
 
 .text-center{
     width: 60%;

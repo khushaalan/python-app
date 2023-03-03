@@ -11,13 +11,14 @@
     <nav>
       <h1>Khushaalan's Web Portfolio</h1>
 
-      <ul id="menu">     
-        <li><a href="{{ url_for('about') }}">About</a></li>
-        <li><a href="{{ url_for('skills') }}">Skills</a></li>
-        <li><a href="{{ url_for('workexperiences') }}">Work Experiences</a></li>
-        <li><a href="{{ url_for('projects') }}">Projects</a></li>
-        <li><a href="{{ url_for('contact') }}">Contact</a></li>
+      <ul id="menu">
+        <li><a href="{{ url_for('about') }}" {% if active_page == 'about' %}class="active"{% endif %}>About</a></li>
+        <li><a href="{{ url_for('skills') }}" {% if active_page == 'skills' %}class="active"{% endif %}>Skills</a></li>
+        <li><a href="{{ url_for('workexperiences') }}" {% if active_page == 'workexperiences' %}class="active"{% endif %}>Work Experiences</a></li>
+        <li><a href="{{ url_for('projects') }}" {% if active_page == 'projects' %}class="active"{% endif %}>Projects</a></li>
+        <li><a href="{{ url_for('contact') }}" {% if active_page == 'contact' %}class="active"{% endif %}>Contact</a></li>
       </ul>
+      
     </nav>
     {% block content %}{% endblock %}
   </body>
