@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "undefined/subscriptions/fb9a18b6-5b93-45fe-bc50-6b1c1c9e4fb9/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/khushaa-python-app",
+    "appService.deploySubpath": "."
+}
