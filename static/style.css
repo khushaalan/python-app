@@ -25,13 +25,15 @@ ul {
 }
 li {
     margin-left: 20px;
-    background-color: #26c7cd;
-    padding: 10px 20px;
-    border-radius: 20px;
+    text-decoration: underline;
 }
 a {
     text-decoration: none;
     color: black;
     font-size: x-large;
     font-weight: bold;
+}
+a:hover {
+    color: #ff0000;
+    backdrop-filter: blur(5px);
 }
