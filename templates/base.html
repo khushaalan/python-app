@@ -10,14 +10,30 @@
     
     <nav>
       <h1>Khushaalan's Web Portfolio</h1>
-      <ul>     
+
+      <ul id="menu">     
         <li><a href="{{ url_for('about') }}">About</a></li>
         <li><a href="{{ url_for('skills') }}">Skills</a></li>
         <li><a href="{{ url_for('workexperiences') }}">Work Experiences</a></li>
         <li><a href="{{ url_for('projects') }}">Projects</a></li>
         <li><a href="{{ url_for('contact') }}">Contact</a></li>
       </ul>
+
+      <div id="hamburger" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </nav>
     {% block content %}{% endblock %}
   </body>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const menu = document.getElementById('menu');
+
+    hamburger.addEventListener('click', () => {
+      menu.classList.toggle('show');
+    });
+  </script>
 </html>
