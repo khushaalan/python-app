@@ -37,3 +37,10 @@ a:hover {
     color: #ff0000;
     backdrop-filter: blur(5px);
 }
+
+.text-center{
+    width: 60%;
+    height: 60%;
+    align-items: center;
+    margin: auto;
+}
