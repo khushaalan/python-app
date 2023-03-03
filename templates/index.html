@@ -1,38 +1,9 @@
 <!-- index.html -->
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Python Test App</title>
-    <!--
-    <link rel="icon" href="/static/coding.gif" type="image/gif">
-    -->
-    <link rel="icon" href="/static/programmer.png" type="image/png"> 
-    
-  </head>
-  <body>
-    <h1>Index</h1>
-    <p>This is the Index page.</p>
-    <button onclick="redirectToAbout()">About</button>
-    <button onclick="redirectToSkills()">Skills</button>
-    <button onclick="redirectToWorkExperiences()">Work Experiences</button>
-    <button onclick="redirectToProjects()">Project</button>
-    <button onclick="redirectToContact()">Contact</button>
-    <script>
-      function redirectToAbout() {
-        window.location.href = '/redirect-about';
-      }
-      function redirectToSkills() {
-        window.location.href = '/redirect-skills';
-      }
-      function redirectToWorkExperiences() {
-        window.location.href = '/redirect-workexperiences';
-      }
-      function redirectToProjects() {
-        window.location.href = '/redirect-projects';
-      }
-      function redirectToContact() {
-        window.location.href = '/redirect-contact';
-      }
-    </script>
-  </body>
-</html>
+{% extends "base.html" %}
+
+{% block title %}Khushaalan's Web Portfolio{% endblock %}
+
+{% block content %}
+<h1>Index</h1>
+<p>This is the Index page.</p>
+{% endblock %}
