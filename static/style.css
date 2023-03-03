@@ -44,3 +44,21 @@ a:hover {
     align-items: center;
     margin: auto;
 }
+
+#text-center{
+    width: 60%;
+    height: 60%;
+    align-items: center;
+    margin: auto;
+}
+
+#contact1{
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 100px;
+}
+
+#contact2{
+    display: inline-block;
+    vertical-align: top;
+}
