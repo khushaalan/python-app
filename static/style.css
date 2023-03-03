@@ -65,3 +65,10 @@ a.active, a:hover {
     vertical-align: top;
 }
 
+#content_jinja{
+    background-color: antiquewhite;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 50px;
+}
+
